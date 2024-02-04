@@ -1,9 +1,47 @@
-<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
-  <c-container>
+<c-container fluid="" >
+  <c-row class="justify-content-center" style="vertical-align: middle;">
+    <c-col class="pandoLoginLeft" xs="8" >
+
+    </c-col>
+    <c-col xs="4" >
+
+          <form cForm>
+            <h1 style="text-align: center;">Login</h1>
+            <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
+            <c-input-group class="mb-3">
+              <input autoComplete="username" cFormControl placeholder="Email" />
+            </c-input-group>
+            <c-input-group class="mb-4">
+              <input
+                autoComplete="current-password"
+                cFormControl
+                placeholder="Senha"
+                type="password"
+              />
+            </c-input-group>
+            <c-row>
+              <c-col xs="6">
+                <button cButton class="px-4" color="primary">
+                  Entrar
+                </button>
+              </c-col>
+              <c-col class="text-right" xs="6">
+                <button cButton class="px-0" color="link">
+                  Forgot password?
+                </button>
+              </c-col>
+            </c-row>
+          </form>
+
+    </c-col>
+
+  </c-row>
+</c-container>
+  <!--
+
     <c-row class="justify-content-center">
-      <c-col md="8">
         <c-card-group>
-          <c-card class="p-4">
+          <c-card class="p-8">
             <c-card-body>
               <form cForm>
                 <h1>Login</h1>
@@ -55,7 +93,5 @@
             </c-card-body>
           </c-card>
         </c-card-group>
-      </c-col>
     </c-row>
-  </c-container>
-</div>
+  -->
