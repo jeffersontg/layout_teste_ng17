@@ -37,6 +37,7 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { AuthModule } from './../components/auth/auth.module';
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,
@@ -72,7 +73,8 @@ const APP_CONTAINERS = [
     BadgeModule,
     ListGroupModule,
     CardModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    AuthModule,
   ],
   providers: [
     {
