@@ -1,97 +1,54 @@
-<c-container fluid="" >
-  <c-row class="justify-content-center" style="vertical-align: middle;">
-    <c-col class="pandoLoginLeft" xs="8" >
+<div class="pando-login-container" >
+    <div class="pando-login-left">
+      <div class="pando-text-login">
+        <div>
+          <h1 class="pando-title">Pando</h1>
+        </div>
+        <div class="body-title">
+            Novo por aqui? Para gerir um novo <br> ecossistema de controle, cadastre-se.
+        </div>
+        <button class="btn-default">
+          <a href="https://estufa-automatica.netlify.app/" target="_blank">
+              Cadastrar
+          </a>
+        </button>
+      </div>
+    </div>
 
-    </c-col>
-    <c-col xs="4" >
+    <div class="pando-login-form">
+        <form cForms >
+          <h1 style="text-align: center;">Login</h1>
+          <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
+          <c-input-group class="mb-3">
+            <input autoComplete="username" cFormControl placeholder="Email" />
+          </c-input-group>
+          <c-input-group class="mb-4">
+            <input
+              autoComplete="current-password"
+              cFormControl
+              placeholder="Senha"
+              type="password"
+            />
+          </c-input-group>
+          <c-row>
+            <c-col xs="6">
+              <button cButton class="px-4" color="primary">
+                Entrar
+              </button>
+            </c-col>
+            <c-col class="text-right" xs="6">
+              <button cButton class="px-0" color="link">
+                Esqueceu a senha?
+              </button>
+            </c-col>
+          </c-row>
+        </form>
 
-          <form cForm>
-            <h1 style="text-align: center;">Login</h1>
-            <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
-            <c-input-group class="mb-3">
-              <input autoComplete="username" cFormControl placeholder="Email" />
-            </c-input-group>
-            <c-input-group class="mb-4">
-              <input
-                autoComplete="current-password"
-                cFormControl
-                placeholder="Senha"
-                type="password"
-              />
-            </c-input-group>
-            <c-row>
-              <c-col xs="6">
-                <button cButton class="px-4" color="primary">
-                  Entrar
-                </button>
-              </c-col>
-              <c-col class="text-right" xs="6">
-                <button cButton class="px-0" color="link">
-                  Forgot password?
-                </button>
-              </c-col>
-            </c-row>
-          </form>
 
-    </c-col>
+    </div>
+</div>
 
-  </c-row>
-</c-container>
-  <!--
 
-    <c-row class="justify-content-center">
-        <c-card-group>
-          <c-card class="p-8">
-            <c-card-body>
-              <form cForm>
-                <h1>Login</h1>
-                <p class="text-medium-emphasis">Sign In to your account</p>
-                <c-input-group class="mb-3">
-                  <span cInputGroupText>
-                    <svg cIcon name="cilUser"></svg>
-                  </span>
-                  <input autoComplete="username" cFormControl placeholder="Username" />
-                </c-input-group>
-                <c-input-group class="mb-4">
-                  <span cInputGroupText>
-                    <svg cIcon name="cilLockLocked"></svg>
-                  </span>
-                  <input
-                    autoComplete="current-password"
-                    cFormControl
-                    placeholder="Password"
-                    type="password"
-                  />
-                </c-input-group>
-                <c-row>
-                  <c-col xs="6">
-                    <button cButton class="px-4" color="primary">
-                      Login
-                    </button>
-                  </c-col>
-                  <c-col class="text-right" xs="6">
-                    <button cButton class="px-0" color="link">
-                      Forgot password?
-                    </button>
-                  </c-col>
-                </c-row>
-              </form>
-            </c-card-body>
-          </c-card>
-          <c-card [ngStyle]="{'width.%': 44}" class="text-white bg-primary py-5">
-            <c-card-body class="text-center">
-              <div>
-                <h2>Sign up</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <button [active]="true" cButton class="mt-3" color="primary" routerLink="/register">
-                  Register Now!
-                </button>
-              </div>
-            </c-card-body>
-          </c-card>
-        </c-card-group>
-    </c-row>
-  -->
+
+
+

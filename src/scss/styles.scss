@@ -2,11 +2,44 @@
 // If you want to override variables do it here
 @import "variables";
 
+$pando-color-bg: #84A98C;
+$primary: $pando-color-bg;
+
+
+$pando-color-bg: #84A98C;
+$primary: $pando-color-bg;
+
+$custom-colors: (
+  "pando": $pando-color-bg
+);
+
+$custom-colors-variant: (
+  "pando": btn-color-map($pando-color-bg, $pando-color-bg)
+);
+
+
+
 $enable-ltr: true;
 $enable-rtl: true;
+$sidebar-bg: white;
+$sidebar-border-width: 1px;
+$sidebar-border-color: $pando-color-bg;
+$sidebar-nav-link-color: gray;
+$sidebar-nav-link-icon-color: gray;
+
+$sidebar-nav-link-hover-color: black;
+$sidebar-nav-link-hover-icon-color: black;
+
+$sidebar-header-bg: $pando-color-bg;
+$sidebar-nav-group-indicator-color: gray;
+$sidebar-nav-title-color: gray;
+$sidebar-nav-link-active-color: $pando-color-bg;
+$sidebar-nav-link-active-bg: rgba(white, .1);
+$sidebar-nav-link-active-icon-color: $pando-color-bg;
 
 // Import styles with default layout.
 @import "@coreui/coreui/scss/coreui";
+
 
 // Import Chart.js custom tooltips styles
 @import "@coreui/chartjs/scss/coreui-chartjs";
@@ -22,9 +55,11 @@ $enable-rtl: true;
 // If you want to add something do it here
 @import "custom";
 
-.pandoLoginLeft {
-  background-color: #84A98C;
-  height: 100vh;
-}
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$button-variants: map-merge($button-variants, $custom-colors-variant);
+
+
+
 
 

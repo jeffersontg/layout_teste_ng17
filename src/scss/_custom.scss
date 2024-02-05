@@ -1,2 +1,40 @@
 // Here you can add other styles
 
+
+
+
+.pando-login-container {
+
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.pando-text-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.pando-login-left {
+  background-color: $pando-color-bg;
+  width: 70%;
+  color: white;
+  justify-content: center;
+}
+
+.pando-login-form {
+  padding: 10px;
+  margin: auto;
+}
+
+.pando-title{
+  font-size: 1000;
+}
+
+
+

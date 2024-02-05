@@ -3,7 +3,7 @@
 
 
 $enable-deprecation-messages: false;
-
+$pando-color-bg: #84A98C;
 
 
 
@@ -120,8 +120,8 @@ $enable-deprecation-messages: false;
 //   "danger":     $danger,
 //   "light":      $light,
 //   "dark":       $dark
-// );
-// scss-docs-end theme-colors-map
+//);
+//scss-docs-end theme-colors-map
 
 // Text colors
 // $high-emphasis-dark:    rgba(shift-color($gray-base, +26), .87);
@@ -1672,4 +1672,5 @@ $enable-deprecation-messages: false;
 // $kbd-bg:                            $gray-900;
 
 // $pre-color:                         unset;
+
 
