@@ -16,11 +16,16 @@
     </div>
 
     <div class="pando-login-form">
-        <form cForms >
+        <form cForm  [formGroup]="loginForm"  (ngSubmit)="onSubmitLoginForm()">
           <h1 style="text-align: center;">Login</h1>
           <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
           <c-input-group class="mb-3">
-            <input autoComplete="username" cFormControl placeholder="Email" />
+            <input
+              autoComplete="username"
+              cFormControl
+              placeholder="Email"
+              formControlName="email"
+            />
           </c-input-group>
           <c-input-group class="mb-4">
             <input
@@ -28,13 +33,16 @@
               cFormControl
               placeholder="Senha"
               type="password"
+              formControlName="password"
             />
           </c-input-group>
           <c-row>
             <c-col xs="6">
-              <button cButton color="primary">
-                Entrar
-              </button>
+              <button
+                cButton
+                color="primary"
+                type="submit"
+              >Entrar</button>
             </c-col>
             <c-col class="text-right" xs="6">
               <button cButton class="px-0" color="link">

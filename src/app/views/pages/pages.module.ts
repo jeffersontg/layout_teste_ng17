@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { RegisterComponent } from './register/register.component';
@@ -20,12 +21,14 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     PagesRoutingModule,
     CardModule,
     ButtonModule,
     GridModule,
     IconModule,
-    FormModule
+    FormModule,
+
   ]
 })
 export class PagesModule {
