@@ -1,58 +1,62 @@
 <div class="pando-login-container" >
-    <div class="pando-login-left">
-      <div class="pando-text-login">
-        <div>
-          <h1 class="pando-title"><b>Pando</b></h1>
-        </div>
-        <div class="body-title">
-            Novo por aqui? Para gerir um novo <br> ecossistema de controle, cadastre-se.
-        </div>
-        <br/>
-        <h3><c-badge color="pando" shape="rounded-pill" style="border: 2px solid white;cursor: pointer;">Cadastrar</c-badge></h3>
+  <div class="pando-login-form">
+    <form cForm  [formGroup]="loginForm"  (ngSubmit)="onSubmitLoginForm()">
+      <h1 style="text-align: center;">Login</h1>
+      <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
+      <c-input-group class="mb-3">
+        <input
+          autoComplete="username"
+          cFormControl
+          placeholder="Email"
+          formControlName="email"
+        />
+      </c-input-group>
+      <c-input-group class="mb-4">
+        <input
+          autoComplete="current-password"
+          cFormControl
+          placeholder="Senha"
+          type="password"
+          formControlName="password"
+        />
+      </c-input-group>
+      <c-row>
+        <c-col xs="6">
+          <button
+            cButton
+            color="dark"
+            size="lg"
+            shape="rounded-pill"
+            type="submit"
+          >Entrar</button>
+        </c-col>
+        <c-col class="text-right" xs="6">
+          <button cButton class="px-0" color="link">
+            Esqueceu a senha?
+          </button>
+        </c-col>
+      </c-row>
+    </form>
+
+
+  </div>
+
+
+
+
+  <div class="pando-login-noform">
+    <div class="pando-text-login">
+      <div>
+        <h1 class="pando-title"><b>Pando</b></h1>
       </div>
+      <div class="body-title">
+          Novo por aqui? Para gerir um novo <br> ecossistema de controle, cadastre-se.
+      </div>
+      <br/>
+      <h3><c-badge color="pando" shape="rounded-pill" style="border: 2px solid white;cursor: pointer;">Cadastrar</c-badge></h3>
     </div>
+  </div>
 
-    <div class="pando-login-form">
-        <form cForm  [formGroup]="loginForm"  (ngSubmit)="onSubmitLoginForm()">
-          <h1 style="text-align: center;">Login</h1>
-          <p class="text-medium-emphasis">ou utilize o seu email para logar</p>
-          <c-input-group class="mb-3">
-            <input
-              autoComplete="username"
-              cFormControl
-              placeholder="Email"
-              formControlName="email"
-            />
-          </c-input-group>
-          <c-input-group class="mb-4">
-            <input
-              autoComplete="current-password"
-              cFormControl
-              placeholder="Senha"
-              type="password"
-              formControlName="password"
-            />
-          </c-input-group>
-          <c-row>
-            <c-col xs="6">
-              <button
-                cButton
-                color="dark"
-                size="lg"
-                shape="rounded-pill"
-                type="submit"
-              >Entrar</button>
-            </c-col>
-            <c-col class="text-right" xs="6">
-              <button cButton class="px-0" color="link">
-                Esqueceu a senha?
-              </button>
-            </c-col>
-          </c-row>
-        </form>
-
-
-    </div>
 </div>
 
 
