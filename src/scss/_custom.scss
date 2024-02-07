@@ -1,6 +1,24 @@
 // Here you can add other styles
 
+.pando-landing-container {
+  background-color: $pando-color-bg;
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+}
+.pando-landing-left {
+  background-color: $pando-color-bg;
+  width: 50%;
+  color: white;
+  justify-content: center;
+}
 
+.pando-landing-right {
+  background-color: $pando-color-bg;
+  width: 50%;
+  color: white;
+  justify-content: center;
+}
 
 
 .pando-login-container {

@@ -14,7 +14,7 @@ $custom-colors: (
 );
 
 $custom-colors-variant: (
-  "pando": btn-color-map($pando-color-bg, $pando-color-bg)
+  "pando": btn-color-map(white, white)
 );
 
 
@@ -36,6 +36,7 @@ $sidebar-nav-title-color: gray;
 $sidebar-nav-link-active-color: $pando-color-bg;
 $sidebar-nav-link-active-bg: rgba(white, .1);
 $sidebar-nav-link-active-icon-color: $pando-color-bg;
+
 
 // Import styles with default layout.
 @import "@coreui/coreui/scss/coreui";

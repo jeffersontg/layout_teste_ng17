@@ -6,11 +6,13 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { RegisterComponent } from './views/pages/register/register.component';
 import { LoginComponent } from './views/pages/login/login.component';
+import { LandingComponent } from './views/pages/landing/landing.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -73,24 +75,25 @@ const routes: Routes = [
     ]
   },
   {
-    path: '404',
-    component: Page404Component,
+    path: 'login',
+    component: LoginComponent,
     data: {
-      title: 'Page 404'
+      title: 'Login page'
     }
   },
+  {
+    path: 'landing',
+    component: LandingComponent,
+    data: {
+      title: 'Landing Page'
+    }
+  },
+
   {
     path: '500',
     component: Page500Component,
     data: {
       title: 'Page 500'
-    }
-  },
-  {
-    path: 'login',
-    component: LoginComponent,
-    data: {
-      title: 'Login Page'
     }
   },
   {
@@ -100,6 +103,7 @@ const routes: Routes = [
       title: 'Register Page'
     }
   },
+  {path: '**', redirectTo: 'login'}
   /*
   {
     path: 'loginPando',
@@ -109,7 +113,6 @@ const routes: Routes = [
     }
   },
   */
-  {path: '**', redirectTo: 'dashboard'}
 ];
 
 @NgModule({
