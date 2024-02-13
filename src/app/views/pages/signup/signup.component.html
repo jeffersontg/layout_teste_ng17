@@ -1,0 +1,57 @@
+<div class="pando-signup-container" >
+  <div class="pando-signup-noform">
+    <div class="pando-text-login">
+      <div>
+        <h1 class="pando-title"><b>Pando</b></h1>
+      </div>
+      <div class="body-title">
+          Para conectar-se ao seu ecossistema <br> de controle, realize o login.
+      </div>
+      <br/>
+      <h3><c-badge color="pando" shape="rounded-pill" style="border: 2px solid white;cursor: pointer;">Logar</c-badge></h3>
+    </div>
+  </div>
+
+
+  <div class="pando-signup-form">
+    <form cForm  [formGroup]="signupForm"  (ngSubmit)="onSubmitSignupForm()">
+      <h1 style="text-align: center;"><b>Cadastre-se</b></h1>
+      <br>
+      <c-input-group class="mb-3">
+        <input
+          autoComplete="username"
+          cFormControl
+          placeholder="username"
+          formControlName="username"
+        />
+      </c-input-group>
+
+      <c-input-group class="mb-3">
+        <input
+          autoComplete="email"
+          cFormControl
+          placeholder="Email"
+          formControlName="email"
+        />
+      </c-input-group>
+
+
+      <c-input-group class="mb-4">
+        <input
+          autoComplete="current-password"
+          cFormControl
+          placeholder="Senha"
+          type="password"
+          formControlName="password"
+        />
+      </c-input-group>
+    </form>
+
+
+  </div>
+</div>
+
+
+
+
+

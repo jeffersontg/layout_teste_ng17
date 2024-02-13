@@ -4,7 +4,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.scss'
+  styleUrls: []
 })
 export class SignupComponent {
 
@@ -16,7 +16,7 @@ export class SignupComponent {
 
   constructor (private formBuilder: FormBuilder) {}
 
-  onSubmitLoginForm(): void {
+  onSubmitSignupForm(): void {
     console.log('DADOS DO FORMULÁRIO DE LOGIN:', this.signupForm.value);
   }
 

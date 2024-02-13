@@ -21,12 +21,20 @@
 }
 
 
+.pando-signup-container {
+
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+}
+
 .pando-login-container {
 
   display: flex;
   height: 100vh;
   overflow-y: auto;
 }
+
 
 .pando-text-login {
   display: flex;
@@ -43,12 +51,26 @@
   width: 30%;
   color: white;
   justify-content: center;
+
 }
 
 .pando-login-form {
   padding: 10px;
   margin: auto;
 }
+
+.pando-signup-noform {
+  background-color: $pando-color-bg;
+  width: 30%;
+  color: white;
+  justify-content: center;
+}
+
+.pando-signup-form {
+  padding: 10px;
+  margin: auto;
+}
+
 
 .pando-title{
   font-size: 1000;
